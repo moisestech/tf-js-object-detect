@@ -4,6 +4,7 @@
   "description": "Tensorflow.js React Object Detect",
   "main": "webpack.config.js",
   "dependencies": {
+    "@tensorflow/tfjs": "^2.8.5",
     "css-loader": "^5.0.1",
     "file": "^0.2.2",
     "style-loader": "^2.0.0",
@@ -14,6 +15,7 @@
     "@babel/core": "^7.12.13",
     "@babel/plugin-transform-runtime": "^7.12.15",
     "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
