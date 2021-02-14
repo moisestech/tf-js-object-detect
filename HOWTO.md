@@ -8,36 +8,35 @@
 
 ## NPM
 
-1. Run App `npm start`
-2. Webpack is setup with Hot Reloading and ./dist directory bundling.
-3. `src` directory react and tensorflow imports
+1. **Run App** `npm start`
+2. Webpack Hot Reloading and ./dist directory bundling.
 
-### To Run
+### npm start
 
 - **scripts**: `npm start` runs scripts: `{ "start": "webpack serve"}`,
   - store your webpack commmands in package.json#scripts
-- alternatively run `npx webpack` or `node_modules/./bin/webpack`
+  - alternatively run `npx webpack` or `node_modules/./bin/webpack`
 
 ## Package.JSON
 
-## Packaging App
+### Packaging App
 
 - **scripts**: `npm start` runs scripts: { "start": "webpack serve"},
 - **main**: `webpack.config.js` is where webpack starts bundling from.
 
-## WEBPACK
-
-### Bundling App
+## WEBPACK HOW-TO
 
 - **Webpack**: Module bundler.
 - **webpack-cli**: is the interface we use to communicate with webpack.
+- **webpack-dev-server**: info coming soon.
 
-#### CopyWebpackPlugin
+### Plugins
 
-#### HtmlWebpackPlugin
+- **CopyWebpackPlugin**: info coming soon.
+- **HtmlWebpackPlugin**: info coming soon.
+- **CleanWebpackPlugin**: info coming soon.
+- **UglifyPlugin**: info coming soon.
 
-#### CleanWebpackPlugin
+## BABEL HOW-TO
 
-#### UglifyPlugin
-
-#### Babel Loader
+### Babel Loader
