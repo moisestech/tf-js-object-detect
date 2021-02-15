@@ -1,10 +1,16 @@
 # HOW-TO
 
-1. Accessing the React.JS and Tensorflow.JS Computer Vision Template
-2. Install Tensorflow.JS and setup the prebuilt models
-3. Build a React.JS app that accesses your webcam
-4. Make detections from your webcam in real time
-5. Customise detection styling
+## **1.** Accessing the React.JS and Tensorflow.JS Computer Vision Template
+
+## **2.** Install Tensorflow.JS and setup the prebuilt models
+
+## **3.** Build a React.JS app that accesses your webcam
+
+## **4.** Make detections from your webcam in real time
+
+## **5.** Customise detection styling
+
+---
 
 ## NPM
 
