@@ -8,7 +8,7 @@ import * as tf from "@tensorflow/tfjs";
 import * as cocossd from "@tensorflow-models/coco-ssd";
 
 // drawing bound-boxes on detected objects
-import { drawRect } from "./utilities"
+import { drawRect } from "./utils"
 
 
 export default  function App() {
