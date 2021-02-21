@@ -3,15 +3,27 @@
   "version": "1.0.0",
   "description": "Tensorflow.js React Object Detect",
   "main": "webpack.config.js",
-  "dependencies": {
-    "@tensorflow-models/coco-ssd": "^2.2.1",
-    "@tensorflow/tfjs": "^2.8.5",
-    "css-loader": "^5.0.1",
-    "react-webcam": "^5.2.3",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.20.0",
-    "webpack-cli": "^4.5.0"
+  "scripts": {
+    "start": "webpack serve",
+    "build": "NODE_ENV='production' webpack",
+    "test": "echo \"No test specified\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moisestech/tf-js-object-detect.git"
+  },
+  "keywords": [
+    "tensorflow.js",
+    "reactjs",
+    "cocossd",
+    "react webcam"
+  ],
+  "author": "Moises Sanabria",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moisestech/tf-js-object-detect/issues"
+  },
+  "homepage": "https://github.com/moisestech/tf-js-object-detect#readme",
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "@babel/plugin-transform-runtime": "^7.12.15",
@@ -20,18 +32,13 @@
     "file-loader": "^6.2.0",
     "webpack-dev-server": "^3.11.2"
   },
-  "scripts": {
-    "test": "echo \"No test specified\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moisestech/tf-js-object-detect.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/moisestech/tf-js-object-detect/issues"
-  },
-  "homepage": "https://github.com/moisestech/tf-js-object-detect#readme"
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "^2.2.1",
+    "@tensorflow/tfjs": "^2.8.5",
+    "css-loader": "^5.0.1",
+    "react-webcam": "^5.2.3",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.20.0",
+    "webpack-cli": "^4.5.0"
+  }
 }
