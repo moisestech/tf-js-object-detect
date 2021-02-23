@@ -1,14 +1,39 @@
 # HOW-TO
 
-## **1.** Accessing the React.JS and Tensorflow.JS Computer Vision Template
+## **1.** Install dependencies
 
-## **2.** Install Tensorflow.JS and setup the prebuilt models
+- Install Tensorflow Model Semantic segmentation and run segmentation in the browser (DeepLab).
+- Full list of dependencies and devDependencies in [package.json]().
 
-## **3.** Build a React.JS app that accesses your webcam
+## **2.** Import dependencies
 
-## **4.** Make detections from your webcam in real time
+- App/index.js
+  - `import * as bodypix` and `import * as tf`.
+  - `import {useRef} from 'react'`. [useRef link](https://reactjs.org/docs/hooks-reference.html#useref)
+    - help us reference our onscreen in DOM elements that keep state during the component lifecycle.
 
-## **5.** Customise detection styling
+## **3.** Setup webcam and canvas
+
+- App/index.js in `<header />` DOM element.
+  - `<Webcam className="react-webcam"/>` return webcam component.
+  - `<Canvas className="react-canvas" />` return canvas component.
+
+## **4.** Define references to those
+
+- App/index.js in `App()` component body.
+  - connect canvas and webcam components with `useRef`.
+  - `const webcamRef = useRef(null);`
+  - `const camvasRef = useRef(null);`
+
+## **5.** Accessing the React.JS and Tensorflow.JS Computer Vision Template
+
+## **6.** Install Tensorflow.JS and setup the prebuilt models
+
+## **7.** Build a React.JS app that accesses your webcam
+
+## **8.** Make detections from your webcam in real time
+
+## **9.** Customise detection styling
 
 ---
 
