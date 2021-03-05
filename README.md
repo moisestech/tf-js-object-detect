@@ -9,7 +9,6 @@
 - [React Webcam](https://www.npmjs.com/package/react-webcam)
 - [Canvas API](https://www.w3schools.com/tags/canvas_arc.asp)
 - [Tensorflow @2.8.5](https://www.tensorflow.org/js/models)
-- []()
 - [ES8](https://www.w3schools.com/js/js_2018.asp)
 - [PropTypes](https://www.npmjs.com/package/prop-types)
 
@@ -23,7 +22,7 @@ To start app: `npm start`
 
 ## 📚 HOW-TO
 
-For additional info click [here](https://github.com/moisestech/tf-js-object-detect/blob/main/HOWTO.md)
+For additional info click [here](https://github.com/moisestech/tf-js-object-detect/blob/main/HOWTO.md]])
 
 ## 🗺 URL Tree
 
