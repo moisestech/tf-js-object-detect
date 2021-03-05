@@ -12,6 +12,8 @@ import { drawRect } from "../utils"
 
 
 export default  function App({project_name = "Tensorflow.js React Object Detect"}) {
+  const webCamRef = useRef(null);
+  const canvasRef = useRef(null);
 
   return (  
     <div clasName="App">
@@ -27,5 +29,5 @@ export default  function App({project_name = "Tensorflow.js React Object Detect"
   )
 }
 
-// video: https://www.youtube.com/watch?v=uTdUUpfA83s
+// video: https://youtu.be/uTdUUpfA83s?t=351
 // code: https://github.com/nicknochnack/RealTimeObjectDetectionTFJSReact
