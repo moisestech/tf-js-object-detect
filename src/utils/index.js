@@ -10,7 +10,7 @@ export const drawRect = (detections, ctx) => {
     // Set styling
     // const color = 'green';
     const color = '#' + Math.floor(Math.random()*16777215).toString(16);
-    ctx.strokeSylt = color;
+    ctx.strokeStyle = color;
     ctx.font = '18px Arial';
     ctx.fillStyle = color;
 
