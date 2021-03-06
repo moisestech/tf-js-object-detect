@@ -93,17 +93,22 @@
       const ctx = canvasRef.current.getContext('2d');
 
       // Update Drawing Utility
+      drawRect(obj, ctx);
     }
   }
   ```
 
-## **6.** Install Tensorflow.JS and setup the prebuilt models
+## **6.** Inspect the **objEstimate**
 
-## **7.** Build a React.JS app that accesses your webcam
+  **i.** Logging the **objEstimate** variable returns an **Array** with access to a **`bbox`** representing the bounding box of the model, **`class`**, and **`score`**.
 
-## **8.** Make detections from your webcam in real time
+  **ii.** Each position in the **`bbox`** **array** represents the **coordinates** of the model.
 
-## **9.** Customise detection styling
+## **7.** Setup Drawing Utility: **drawRect()**
+
+  **i.** **`drawRect`** intakes **`objEstimate`** data and draws object **bonding-boxes** in the canvas.
+
+
 
 ---
 
