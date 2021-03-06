@@ -8,22 +8,32 @@
 ## **2.** Import dependencies
 
 - App/index.js
-  - `import * as bodypix` and `import * as tf`.
-  - `import {useRef} from 'react'`. [useRef link](https://reactjs.org/docs/hooks-reference.html#useref)
-    - help us reference our onscreen in DOM elements that keep state during the component lifecycle.
+  i. `import * as bodypix` and `import * as tf`.
+
+  ii. `import {useRef} from 'react'`. [useRef link](https://reactjs.org/docs/hooks-reference.html#useref)
+
+  - help us reference our onscreen in DOM elements that keep state during the component lifecycle.
 
 ## **3.** Setup webcam and canvas
 
-- App/index.js in `<header />` DOM element.
-  - `<Webcam className="react-webcam"/>` return webcam component.
-  - `<Canvas className="react-canvas" />` return canvas component.
+  i. App/index.js in `<header />` DOM element returns components.
+
+  ```javascript
+  // App () comp return function
+  return (
+    <Webcam className="react-webcam"/>
+    <Canvas className="react-canvas" />
+  )
+  ```
 
 ## **4.** Define references to those
 
-- App/index.js in `App()` component body.
-  - connect canvas and webcam components with `useRef`.
-  - `const webcamRef = useRef(null);`
-  - `const camvasRef = useRef(null);`
+  i. App/index.js in `App()` component body connect canvas and webcam components with `useRef`.
+
+  ```javascript
+  const webcamRef = useRef(null);
+  const camvasRef = useRef(null);
+  ```
 
 ## **5.** Accessing the React.JS and Tensorflow.JS Computer Vision Template
 
