@@ -34,9 +34,10 @@ For additional info click [here](https://github.com/moisestech/tf-js-object-dete
 
 ## ⛰️ Roadmap
 
-1. Migrate to TypeScript
-2. Make Mobile Friendly
-3. Write Tests
+1. Create PartyMode toggle
+2. Migrate to TypeScript
+3. Make Mobile Friendly
+4. Write Tests
 
 ## To-Do's
 
