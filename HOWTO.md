@@ -93,7 +93,7 @@
       const ctx = canvasRef.current.getContext('2d');
 
       // Update Drawing Utility
-      drawRect(obj, ctx);
+      // drawRect(obj, ctx);
     }
   }
   ```
@@ -108,7 +108,46 @@
 
   **i.** **`drawRect`** intakes **`objEstimate`** data and draws object **bonding-boxes** in the canvas.
 
+  **ii.** **`drawRect`** loops through each **`detection`** parameter using **`forEach`** method.
 
+  **iii.** **`prediction['bbox']`** and **`prediction['class']`** are accessed to pull **coordinates** and detection **name**.
+
+  **iv.** Next **`ctx`** is set with **`strokeStyle`**, **`font`**, **`fillStyle`**.
+
+  **v.** Next, start drawing the rectangles with **`ctx.beginPath()`** and pass **`fillText`**, with the **`text `** from the **`prediction['class']`** as well as the **`x, y`** coordinates.
+
+  **vi.** Last, **`ctx.rect(x, y, width, height)`** and **`ctx.stroke()`** draws the square onto the canvas to be visible on the screen.
+
+  ```javascript
+  export const drawRect = (detections, ctx) => {
+    detections.forEach(prediction => {
+      
+      // Get prediction  results
+      const [x, y, width, height] = prediction['bbox'];
+      const text = prediction['class'];
+
+      // Set styling
+      const color = 'green';
+      ctx.strokeStyle = color;
+      ctx.font = '18px Arial';
+      ctx.fillStyle = color;
+
+      // Draw rectangles and text
+      ctx.beginPath();
+      ctx.fillText(text, x, y);
+      ctx.rect(x, y, width, height);
+      ctx.stroke();
+    });
+  }
+  ```
+
+## **8.** Draw bounding-boxes in party-mode
+
+  **i.** For party-mode **bouding-boxes** the **`ctx.strokeStyle = color;`** will be randomised using **`Math.floor()`** and **`Math.random()`**
+
+  ```javascript
+  const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+  ```
 
 ---
 
