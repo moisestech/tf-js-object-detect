@@ -32,9 +32,24 @@
 
   ```javascript
   const webcamRef = useRef(null);
-  const camvasRef = useRef(null);
+  const canvasRef = useRef(null);
   ```
 
+## **5.** Setup runCoco function
+
+  i. async function **`runCoco`** will perform object detection using the **`webcamRef`**.
+
+  ii. Inside the function **`net`** stores the result of the **`cocossd.load()`**.
+  
+  iii. In another step the function **`detect`** with the parameter **`net`** gets called insite the **`runCoco`** function.
+
+  ```javascript
+  const runCoco = async () => {
+    const net = await cocossd.load();
+
+
+  }
+  ```
 ## **5.** Accessing the React.JS and Tensorflow.JS Computer Vision Template
 
 ## **6.** Install Tensorflow.JS and setup the prebuilt models
